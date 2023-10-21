@@ -1,0 +1,22 @@
+
+#my-contact{
+    min-height: 20vh;
+    .contact{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       gap: 1rem;
+
+        .contact-email{
+            font-size: 1.6rem;
+          
+        }
+        .social-icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+}

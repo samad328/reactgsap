@@ -1,0 +1,27 @@
+
+#my-skills{
+    // min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .skills{
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        grid-template-rows: auto;
+        gap: 2rem;
+
+        @media screen and (max-width:500px) {
+            grid-template-columns: repeat(2 ,1fr);
+        }
+        
+    }
+    .skill{
+        padding: 2rem 1rem;
+        background-color: #333639;
+        border-radius: 0.6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

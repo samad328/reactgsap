@@ -1,0 +1,114 @@
+@import '../../gerneral';
+.hero{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .online{
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        font-size: .875rem;
+    line-height: 1.25rem;
+        span{
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 9999px;
+            background-color: greenyellow;
+        }
+    }
+
+    .name{
+        // font-size: var(--step-4);
+        font-size: var(--step-6);
+        font-weight: 700;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-image: url(https://media2.giphy.com/media/HkEDr0jVekaZO/giphy.gif?cid=790b76115151ed408a9cae4539eb6351baba5d85998ab783&ct=g&rid=giphy.gif);
+// white-space: nowrap;
+        .marker{
+            position: relative;
+            display: inline-block;
+            // margin-left: 1rem;
+            color: transparent;
+        -webkit-background-clip: text;
+        background-image: url(https://media2.giphy.com/media/HkEDr0jVekaZO/giphy.gif?cid=790b76115151ed408a9cae4539eb6351baba5d85998ab783&ct=g&rid=giphy.gif);
+// white-space: nowrap;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 1%;
+        width: 100%;
+        height: 14px;
+        transform: skew(-12deg) translateX(-50%);
+        background: #5c6cff;
+        z-index: -1;
+        line-height: normal;
+        // margin-left: 1rem;
+    }
+        }
+        .gradient{
+            color: transparent;
+            background: linear-gradient(to right, #DB2777 0%, #C084FC 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+             font-size: var(--step-7);
+            font-weight: 700;
+        }
+    }
+
+    .buttons{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        align-items: center;
+        
+        a{
+            border-radius: 20px;
+            background-color: #333639;
+            display: flex;
+            color: white;
+            gap: 0.5rem;
+            align-items: center;
+             width: 111px;
+            padding: 0.7rem 1.7rem;
+            text-decoration: none;
+            justify-content: center;
+            span{
+                display: inline-block;
+                display: flex;
+                svg{
+                    width: 0.9rem;
+                }
+            }
+        }
+    }
+    .paragraph{
+        max-width: 40ch;
+        font-size: 1.5rem;
+       
+    // line-height: 1.75rem;
+    margin-top: 2.25rem;
+    color: #848688;
+    }
+
+@media screen and (max-width:500px) {
+    padding: 1rem;
+    .online{
+        display: none;
+
+    }
+.buttons{
+    flex-direction: column;
+    width: 100%;
+    a{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+}
+    
+}
